@@ -1,0 +1,35 @@
+ul, ol{
+	display: flex;
+}
+
+ul li, ol li {
+	width: 25%;
+	text-align: center;
+	list-style-type: none;
+}
+
+header h1 {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+footer {
+	height: 200px;
+	text-align: center;
+}
+
+footer ol li {
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	padding-top: 100px;
+}
+
+a, a:hover, a:visited, a:active {
+	color: blue;
+	
+}
+
+section {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
