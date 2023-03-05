@@ -5,11 +5,14 @@ ul, ol{
 ul li, ol li {
 	width: 25%;
 	text-align: center;
+}
+ul li {
 	list-style-type: none;
 }
 
 header h1 {
 	text-align: center;
+	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
@@ -19,17 +22,15 @@ footer {
 }
 
 footer ol li {
-	list-style-type: upper-roman;
 	list-style-position: inside;
 	padding-top: 100px;
 }
 
 a, a:hover, a:visited, a:active {
 	color: blue;
-	
 }
 
 section {
-	padding-bottom: 50px;
-	padding-top: 50px;
+	padding-bottom: 25px;
+	padding-top: 25px;
 }
