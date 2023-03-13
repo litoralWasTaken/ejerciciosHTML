@@ -1,0 +1,37 @@
+header svg {
+	justify-content: center;
+
+}
+
+table, tr, th, td {
+	padding: 10px;
+	border: 1px solid #000000;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+
+video, iframe {
+	display: block;
+}
+
+/* Header menu */
+ul {
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+}
+
+li {
+	text-align: center;
+	width: 33%;
+}
+
+h1 {
+	text-align: center;
+}
+
+svg {
+	display: block;
+	margin: auto;
+}
