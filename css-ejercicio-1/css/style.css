@@ -3,19 +3,22 @@
 }
 
 #intro-container {
-	display: flex;
-	flex-direction: column;
-	
+	/* Posicionamiento del elemento e imagen de fondo */
 	background-image: url('../img/jane-doe.jpg');
-	 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	height: 1200px;
+
+	/* Alineamiento de los elementos hijos en el medio  */
+	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	background-attachment: scroll;
 }
+
+
 #intro-container h1, h3, button  {
 	text-align: center;
 	margin: 10px;
