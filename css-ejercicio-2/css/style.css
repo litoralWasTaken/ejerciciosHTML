@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+#page-nav {
+	background-color: black;
+	color: white;
+	height: 60px;
+}
+
+#page-nav div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#page-nav div p {
+	flex: 1;
+	/* chapuza */
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: 700;
+}
+
+#main-section {
+	height: 600px;
+	text-align: center;
+	font-weight: 300;
+}
+
+#main-section h1 {
+	padding-top: 300px;
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+#main-button-container div {
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+/* Estilizado general de botones de caja principal */
+#main-button-main {
+	background-color: #006FFF;
+}
+
+#main-button-main a {
+	color: white;
+}
+
+#main-button-secondary {
+	background-color: gray;
+}
+
+#main-button-secondary a {
+	color: white;
+}
+
+
+/* Estilizado para botón de contacto cuando se pasa por encima el cursor */
+#main-button-main:hover {
+	background-color: red;
+}
+
+#card-container {
+	background-color: #F8F9FB;
+	height: 600px;
+}
+
+.card-article {
+	height: 400px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	/* margin: 10px auto; */
+	margin: 20px 40px 20px 20px;
+	float: left;
+	width: 30%;
+	height: 400px;
+}
+
+.card-thumbnail {
+	height: 200px;
+	background-color: gray;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	line-height: 200px;
+}
+
+.card-bottom-container {
+	display: flex;
+	flex-direction: row;
+
+}
