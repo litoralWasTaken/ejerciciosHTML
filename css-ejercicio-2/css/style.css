@@ -8,24 +8,24 @@
 #page-nav {
 	background-color: black;
 	color: white;
-	height: 60px;
-}
-
-#page-nav div {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-#page-nav div p {
-	flex: 1;
-	/* chapuza */
-	padding-top: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
+	height: 70px;
+	padding: 20px;
 	font-weight: 700;
 }
 
+#nav-title, #nav-hamburger {
+	display: inline-block;
+}
+
+/* Cosas extrañas ocurren con el inline-block, incluso si tienes border-box en el reset... */
+#nav-title {
+	text-align: left;
+	width: 50%;
+}
+#nav-hamburger {
+	text-align: right;
+	width: 49%;
+}
 #main-section {
 	height: 600px;
 	text-align: center;
@@ -94,8 +94,34 @@
 	line-height: 200px;
 }
 
+
+.card-text {
+	max-height: 130px;
+	overflow: scroll;
+	margin-bottom: 20px;
+}
+
+
+/* Espaciado entre los bordes de la caja y el texto / botones */
+.card-text, .card-bottom-container {
+	padding: 15px;
+}
+
+
+/* Espaciado y estilizado entre links y longitud del article */
 .card-bottom-container {
+	display: inline-block;
+	/* Seguro que se puede hacer con display: inline-block, como */
+	/* en el nav pero no lo encuentro */
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	color: #7F878F;
+}
 
+
+.card-bottom-container div a {
+	color: #7F878F;
+	border: 1px solid #7F878F;
+	padding: 5px;
 }
