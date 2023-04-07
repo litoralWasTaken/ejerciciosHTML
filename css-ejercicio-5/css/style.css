@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+	font-family: 'Robot', sans serif;
+}
+
+img {
+	width: 400px;
+	height: auto;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+
+	padding: 10px;
+}
+
+.text-area {
+	padding: 10px;
+}
