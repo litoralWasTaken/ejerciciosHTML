@@ -1,0 +1,10 @@
+/* RESET CSS */
+/* El padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente. */
+*, *:before, *:after {box-sizing: inherit;}
+*{box-sizing: border-box;padding: 0;margin: 0;}
+body {min-height: 100vh; scroll-behavior: smooth; text-rendering: optimizeSpeed; line-height: 1.5;}
+img {max-width: 100%;height: 100%;object-fit: cover; display: block;} /* Imagen responsive */
+a:link, a:visited, a:active {text-decoration:none;}
+ul[class], ol[class] {list-style: none;}
+/*fuente: https://www.super-simple.net/blog/un-css-reset-moderno/*/
+/* FIN RESET CSS */
