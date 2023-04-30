@@ -35,6 +35,7 @@
 
 }
 
+// Mixins, extend y selector %
 %main-button-div {
 	@include contact-buttons; 
 }
@@ -88,7 +89,6 @@
 	}
 	.card-link-container {
 		border: 1px solid $thumb-bg;
-		// padding: 5px;
 		a {
 			color: $black;
 		}
@@ -99,6 +99,7 @@
 	}
 }
 
+// Diseño desktop-first para que se vea bien en movil
 @media (max-width: $mobile-width ) {
 	#card-container {
 		flex-direction: column;
