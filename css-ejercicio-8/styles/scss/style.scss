@@ -1,0 +1,106 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+	font-family: $font;
+}
+
+#page-nav {
+	height: 60px;
+	background-color: $black;
+	color: $white;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	div, button {
+		padding: 10px;
+	}
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+#main-section {
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#main-button-container {
+	display: flex;
+	flex-direction: row;
+
+}
+
+%main-button-div {
+	@include contact-buttons; 
+}
+
+#main-button-main {
+	@extend %main-button-div;
+	background-color: $contact-button;
+}
+
+#main-button-main:hover {
+	 background-color: red;
+}
+
+#main-button-secondary {
+	@extend %main-button-div;
+	background-color: $gray-button;
+}
+
+#card-container {
+	height: auto;
+	background-color: $card-bg;
+	display: flex;
+	padding: 10px;
+	gap: 20px;
+
+	article {
+		background-color: $white;
+		border: 1px solid $card-bg;
+		border-radius: 5px;
+	}
+	.card-thumbnail {
+		height: 200px;
+		background-color: $thumb-bg;
+		text-align: center;
+		color: white;
+		display: grid;
+		align-items: center;
+	}
+
+	.card-text {
+		max-height: 130px;
+		overflow: scroll;
+		margin-bottom: 20px;
+	}
+
+	.card-bottom-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px;
+	}
+	.card-link-container {
+		border: 1px solid $thumb-bg;
+		// padding: 5px;
+		a {
+			color: $black;
+		}
+		.card-view {
+			border-right: 1px solid black;
+
+		}
+	}
+}
+
+@media (max-width: $mobile-width ) {
+	#card-container {
+		flex-direction: column;
+	}
+}
