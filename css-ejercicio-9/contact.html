@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formulario de contacto</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/contact-style.css" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<h2>Formulario de contacto</h2>
+			<p>Escríbenos y en breve los pondremos en contacto contigo</p>
+			<form action="http://noexisto.es/contact">
+				<label for="name">
+					Nombre <span id="required">*</span>
+					<input id="name" type="text" name="name" placeholder="Escribe tu nombre" required>
+				</label>
+
+				<label for="email">
+					Email <span id="required">*</span>
+					<input id="email" type="email" name="email" placeholder="Escribe tu email" required>
+				</label>
+
+				<label for="tel">
+					Telefono
+					<input id="tel" type="tel" name="tel" placeholder="Escribe tu telefono">
+				</label>
+
+				<label for="url">
+					Sitio web
+					<input id="url" type="url" name="url" placeholder="Escribe la URL de tu web">
+				</label>
+
+				<label for="issue">
+					Asunto <span id="required">*</span>
+					<input id="issue" type="text" name="issue" placeholder="Escribe un asunto" required>
+				</label>
+
+				<label for="textarea">
+					Mensaje <span id="required">*</span>
+					<textarea name="message" id="textarea" cols="30" rows="10" placeholder="Deja aqui tu comentario" required></textarea>
+				</label>
+
+				<button type="submit">ENVIAR</button>
+
+				<p><span id="required">*</span>los campos son obligatorios.</p>
+			</form>
+		</main>
+	</body>
+</html>
